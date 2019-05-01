@@ -1,0 +1,72 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    background-image: url("../images/thanos.jpg");
+
+    height: 95%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.stones {
+    height: 200px;
+    
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto; 
+    justify-content: center;
+    position: absolute;
+    bottom: 50px;
+    left: 15%;
+    /* grid-template-rows: 50%;
+    justify-content: center; */
+
+}
+
+.score{
+    background-color: white;
+    opacity: .25;
+    font-size: 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.win{
+    background-color: white;
+    opacity: .25;
+    font-size: 25px;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+
+.loss{
+    background-color: white;
+    opacity: .25;
+    font-size: 25px;
+    position: absolute;
+    top: 132px;
+    left: 20px;
+}
+
+.instructions{
+    background-color: white;
+    opacity: .25;
+    font-size: 18px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20%;
+    padding-left: 20px;
+    padding-right: 20px;
+}

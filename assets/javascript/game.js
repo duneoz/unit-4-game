@@ -18,9 +18,7 @@ $(document).ready(function() {
     //create a function that generates a random number between 19-120
     function getRandomArbitrary(min, max){
         return Math.round(Math.random() * (max - min) + min);
-    }
-
-    console.log(getRandomArbitrary(19, 121));
+    };
 
     //add target to the page
     target = getRandomArbitrary(19, 121);
@@ -28,19 +26,47 @@ $(document).ready(function() {
 
     //generate random values for each stone
         //create an array for a loop
-        var array1 = [redStone, orangeStone, yellowStone, greenStone, blueStone, purpleStone];
+        //var array1 = [redStone, orangeStone, yellowStone, greenStone, blueStone, purpleStone];
 
         //for loop that sets the value of each variable to a random number between 1 and 12
         //not working quite right
-        for (i = 0; i < array1.length; i++) {
-            array1[i] = getRandomArbitrary(1, 13);
-            console.log(array1[i] + "=" + i);
-        };
-    
+        // for (i = 0; i < array1.length; i++) {
+        //     array1[i] = getRandomArbitrary(1, 13);
+        //     console.log(array1[i] + "=" + i);
+        // };
 
+        //was not able to figure out the loop .. current syntax appears to change the variable name
+        redStone = getRandomArbitrary(1, 12);
+        console.log("redStone = " + redStone);
+        orangeStone = getRandomArbitrary(1, 12);
+        console.log("orangeStone = " + orangeStone);
+        yellowStone = getRandomArbitrary(1, 12);
+        console.log("yellowStone = " + yellowStone);
+        greenStone = getRandomArbitrary(1, 12);
+        console.log("greenStone = " + greenStone);
+        blueStone = getRandomArbitrary(1, 12);
+        console.log("blueStone = " + blueStone);
+        purpleStone = getRandomArbitrary(1, 12);
+        console.log("purpleStone = " + purpleStone);
 
     //on click event for each of the stones that adds to the runningTotal variable
 
+        //on click of red stone add assigned value to running total, write to div
+        $("#redStone").on("click", function(){
+            // console.log("got here");
+            runningTotal = runningTotal + redStone;
+            console.log("runningTotal = " + runningTotal);
+
+            //refresh running total div
+            document.getElementById('runningTotal').innerHTML = "Score: " + runningTotal;
+
+            //if statement to compare target and runningtotal
+                //if target = running total, add 1 to win and reset
+                //if target < running total, add 1 to loss and reset
+                //if target > running total, do nothing, game continues
+        });
+
+    
 
 })  
 

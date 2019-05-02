@@ -26,5 +26,23 @@ $(document).ready(function() {
     target = getRandomArbitrary(19, 121);
     document.getElementById('target').innerHTML = "Target: " + target;
 
+    //generate random values for each stone
+        //create an array for a loop
+        var array1 = [redStone, orangeStone, yellowStone, greenStone, blueStone, purpleStone];
+
+        //for loop that sets the value of each variable to a random number between 1 and 12
+        //not working quite right
+        for (i = 0; i < array1.length; i++) {
+            array1[i] = getRandomArbitrary(1, 13);
+            console.log(array1[i] + "=" + i);
+        };
+    
+
+
+    //on click event for each of the stones that adds to the runningTotal variable
+
+
 })  
+
+
 

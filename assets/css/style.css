@@ -21,7 +21,8 @@ body, html {
 
 .grid-container{
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: auto auto auto auto auto auto auto auto;  */
     justify-content: center;
     position: absolute;
     bottom: 50px;

@@ -15,19 +15,42 @@ body, html {
 }
 
 .stones {
-    height: 200px;
+    height: 100px;
     
 }
 
-.grid-container{
+/* .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+} 
+
+.row {
+    position: absolute;
+    bottom: 17.5%;
+}*/
+
+.grid-container{ 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
     height: 15%;
     /* grid-template-columns: auto auto auto auto auto auto auto auto;  */
     justify-content: center;
     position: absolute;
     bottom: 17.5%;
-    left: 15%;
     /* grid-template-rows: 50%;
     justify-content: center; */
 

@@ -96,8 +96,6 @@ $(document).ready(function() {
             document.getElementById('runningTotal').innerHTML = "Score: " + runningTotal;
 
             //if statement to compare target and runningtotal
-                //if target = running total, add 1 to win and reset
-                //if target < running total, add 1 to loss and reset
             checkIt();           
         });
 

@@ -23,7 +23,7 @@ $(document).ready(function() {
     };
 
     //add target to the page
-    target = getRandomArbitrary(19, 121);
+    target = getRandomArbitrary(19, 120);
     document.getElementById('target').innerHTML = "Target: " + target;
 
     //generate random values for each stone
@@ -73,6 +73,15 @@ $(document).ready(function() {
                 document.getElementById('win').innerHTML = "Wins: " + wins;
                 runningTotal = 0;
                 document.getElementById('runningTotal').innerHTML = "Score: " + runningTotal;
+                target = getRandomArbitrary(19, 120);
+            } else if (target < runningTotal) {
+                alert ("Thanos defeated you! Snap!");
+                losses = losses + 1;
+                document.getElementById('loss').innerHTML = "Loss: " + losses;
+                runningTotal = 0;
+                document.getElementById('runningTotal').innerHTML = "Score: " + runningTotal;
+                target = getRandomArbitrary(19, 120);
+                document.getElementById('target').innerHTML = "Target: " + target;
             }
         });
 

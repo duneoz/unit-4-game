@@ -7,6 +7,8 @@
     var greenStone = 0;
     var blueStone = 0;
     var purpleStone = 0;
+    var wins = 0;
+    var losses = 0;
 
     //set initial values for html paragraph tags
     document.getElementById('target').innerHTML = "Target: " + target;
@@ -64,6 +66,14 @@ $(document).ready(function() {
                 //if target = running total, add 1 to win and reset
                 //if target < running total, add 1 to loss and reset
                 //if target > running total, do nothing, game continues
+
+            if (target === runningTotal) {
+                alert("You defeated Thanos!");
+                wins = wins + 1;
+                document.getElementById('win').innerHTML = "Wins: " + wins;
+                runningTotal = 0;
+                document.getElementById('runningTotal').innerHTML = "Score: " + runningTotal;
+            }
         });
 
     

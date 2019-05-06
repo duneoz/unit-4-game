@@ -3,39 +3,10 @@ body, html {
     margin: 0;
 }
 
-/* toggle button */
-#toggleAvenger {
-    background-image: url("../images/btn-thanos.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: absolute;
-    top: 10px;
-    /* need to change this to be dynamic, base it off of the width of the toggle btn div when you know the length */
-    left: 40%;
-    height: 10%;
-    width: 20%;
-}
-#toggleGOT {
-    background-image: url("../images/btn-night-king.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: absolute;
-    top: 10px;
-    /* need to change this to be dynamic, base it off of the width of the toggle btn div when you know the length */
-    left: 40%;
-    height: 10%;
-    width: 20%;
-}
-
-
-
-/* for Avengers */
-#bg {
+.bg {
     background-image: url("../images/thanos.jpg");
 
-    height: 100%;
+    height: 95%;
 
     background-position: center;
     background-repeat: no-repeat;
@@ -43,110 +14,39 @@ body, html {
 
 }
 
-    /* for GoT theme */
-    #bgNightKing {
-        background-image: url("../images/night-king.jpg");
-
-        height: 100%;
-
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-/* stones for Avengers */
-
-#redStone {
-    background-image: url("../images/infinity-red.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+.stones {
+    height: 100px;
+    
 }
 
-#orangeStone {
-    background-image: url("../images/infinity-orange.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+/* .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
-#yellowStone {
-    background-image: url("../images/infinity-yellow.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+} 
 
-#greenStone {
-    background-image: url("../images/infinity-green.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+.row {
+    position: absolute;
+    bottom: 17.5%;
+}*/
 
-#blueStone {
-    background-image: url("../images/infinity-blue.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-#purpleStone {
-    background-image: url("../images/infinity-purple.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-    /* sigels for GoT */
-
-    #houseStark {
-        background-image: url("../images/stark.png");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    #houseTargaryen {
-        background-image: url("../images/targaryen.png");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    #houseLannister {
-        background-image: url("../images/lannister.png");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    #houseMormont {
-        background-image: url("../images/mormont.png");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    #houseGreyjoy {
-        background-image: url("../images/greyjoy.png");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    #wildLings {
-        background-image: url("../images/wildlings.png");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-/* grid for Avengers theme */
 .grid-container{ 
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
     height: 15%;
-    width: 100%;
     /* grid-template-columns: auto auto auto auto auto auto auto auto;  */
     justify-content: center;
     position: absolute;
@@ -155,16 +55,6 @@ body, html {
     justify-content: center; */
 
 }
-
-    /* grid for GoT */
-    .grid-container-night-king {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 2fr;
-        height: 15%;
-        justify-content: center;
-        position: absolute;
-        bottom: 17.5%;
-    }
 
 .score{
     background-color: white;

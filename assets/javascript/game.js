@@ -54,7 +54,9 @@
                 //change text in the title
                 //change text in the instructions div / paragraph divs
                 $(document).ready(function() {
-
+                    
+                    //reset the target
+                    resetTarget();
                     //create a function to generate a random number between a min and a max
                     function getRandomArbitrary(min, max) {
                         return Math.round(Math.random() * (max-min) + min);

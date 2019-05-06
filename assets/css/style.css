@@ -6,7 +6,7 @@ body, html {
 .bg {
     background-image: url("../images/thanos.jpg");
 
-    height: 95%;
+    height: 100%;
 
     background-position: center;
     background-repeat: no-repeat;
